@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# ☕ ChaiFi – Buy Me a Chai (Web3 dApp)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ChaiFi is a modern Web3 decentralized application that allows users to support creators by sending 0.001 ETH along with a message directly on the Ethereum blockchain.
 
-Currently, two official plugins are available:
+Built with a clean UI and powerful smart contract integration, this dApp demonstrates full-stack Web3 development using React, Tailwind CSS, Ethers.js, and Solidity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔗 Wallet Connection (MetaMask)
+- 💸 Send 0.001 ETH to support creator
+- 📝 Permanent on-chain messages
+- 🏆 Leaderboard (Top contributors)
+- 📜 Live activity feed
+- ⏳ Transaction loader & modal system
+- 🎨 Modern responsive UI (Tailwind CSS)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Frontend:
+- React (Vite)
+- Tailwind CSS
+- TypeScript
+- Ethers.js
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Smart Contract:
+- Solidity
+- Ethereum (Sepolia Testnet)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 How It Works
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. User connects wallet via MetaMask.
+2. User enters name and message.
+3. Smart contract function `buyChai()` is called.
+4. 0.001 ETH is sent to the contract.
+5. Message is stored on-chain.
+6. UI updates with latest memos and leaderboard.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🌐 Network
+
+Currently deployed on Ethereum Sepolia Testnet.
+
+---
+
+## 🎯 Purpose
+
+This project demonstrates:
+- Smart contract interaction with frontend
+- Blockchain transaction handling
+- Event-based UI updates
+- Modern Web3 UX design
+- Production-ready React architecture
+
+---
+
+## 🔥 Author
+
+Built with ❤️ as part of Web3 learning and blockchain development journey.
